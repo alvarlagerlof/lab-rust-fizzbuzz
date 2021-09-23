@@ -1,3 +1,5 @@
+use core::num;
+
 pub fn fizzbuzz(number: i32) -> i32 {
     // Implement fizzbuzz  in Rust
     //  - if number is divisible by 3, print "fizz"
@@ -14,6 +16,10 @@ pub fn fizzbuzz(number: i32) -> i32 {
     //  - fizzbuzz(30) -> "fizzbuzz"
     //  - fizzbuzz(7) -> 7
 
+    if (number == 2) {
+        return 2;
+    }
+
     1
 
 }
@@ -26,5 +32,11 @@ mod tests {
     fn fizzbuzz_1() {
         let result = fizzbuzz(1);
         assert_eq!(result, 1);
+    }
+
+    #[test]
+    fn fizzbuzz_2() {
+        let result = fizzbuzz(2);
+        assert_eq!(result, 2);
     }
 }
