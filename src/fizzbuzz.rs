@@ -16,11 +16,7 @@ pub fn fizzbuzz(number: i32) -> i32 {
     //  - fizzbuzz(30) -> "fizzbuzz"
     //  - fizzbuzz(7) -> 7
 
-    if (number == 2) {
-        return 2;
-    }
-
-    1
+    number
 
 }
 
