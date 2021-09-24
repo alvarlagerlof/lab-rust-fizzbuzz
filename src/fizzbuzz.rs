@@ -1,6 +1,6 @@
 #[derive(PartialEq, Debug)]
 pub enum NumOrString {
-    Num(i32), 
+    Num(i32),
     String(String)
 }
 
@@ -42,9 +42,10 @@ mod tests {
         assert_eq!(result, expectation);
     }
     
-    // #[test]
-    // fn fizzbuzz_3() {
-    //     let result = fizzbuzz(3);
-    //     assert_eq!(result, "fizz");
-    // }
+    #[test]
+    fn fizzbuzz_3() {
+        let result = fizzbuzz(3);
+        let expectation = NumOrString::String("fizz".to_string());
+        assert_eq!(result, expectation);
+    }
 }
